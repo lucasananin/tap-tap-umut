@@ -12,18 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f38dc086e8d4eb4bb3f2a6e81e118c7, type: 3}
   m_Name: Level_1
   m_EditorClassIdentifier: 
-  _tables:
-  - _prefabs:
-    - {fileID: 6694372175746724523, guid: 761f0550b8c04904580a67397b8f42bc, type: 3}
-    _odd: 90
-  - _prefabs:
-    - {fileID: 6694372175746724523, guid: 0cec80d4364524d44ade4b357cb6e94a, type: 3}
-    _odd: 10
+  _duration: 10
   _delayRange: {x: 1, y: 2}
   _xForceRange: {x: -1, y: 1}
   _yForceRange: {x: 10, y: 12}
   _torqueRange: {x: 4, y: 8}
-  _burstRange: {x: 1, y: 3}
+  _burstRange: {x: 1, y: 1}
+  _tables:
+  - _prefabs:
+    - {fileID: 6694372175746724523, guid: 761f0550b8c04904580a67397b8f42bc, type: 3}
+    _odd: 90
   _odds:
   - 90
   - 10

@@ -59,7 +59,19 @@ public class ScoreHandler : MonoBehaviour
         OnStartFever?.Invoke(this);
         _currentMultiplier *= _feverMultiplier;
         yield return new WaitForSeconds(5f);
+        EndPopFever();
+    }
+
+    public void EndPopFever()
+    {
+        StopAllCoroutines();
         _currentMultiplier /= _feverMultiplier;
         OnEndFever?.Invoke(this);
+    }
+
+    public void DoubleScore()
+    {
+        _currentValue *= 2;
+        OnChanged?.Invoke(this);
     }
 }

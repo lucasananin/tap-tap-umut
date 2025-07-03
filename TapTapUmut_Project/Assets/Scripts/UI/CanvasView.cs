@@ -6,6 +6,7 @@ public class CanvasView : MonoBehaviour
 {
     [SerializeField] CanvasGroup _canvasGroup = null;
     [SerializeField] float _fadeDuration = 0.3f;
+    [SerializeField] bool _hideOnAwake = true;
     //[SerializeField] bool _isModal = false;
 
     private float _lastAlpha = 0;
@@ -16,6 +17,18 @@ public class CanvasView : MonoBehaviour
     //public static event UnityAction<CanvasView> OnModalHide = null;
     //public static event UnityAction<CanvasView> OnShow = null;
     //public static event UnityAction<CanvasView> OnHide = null;
+
+    private void Awake()
+    {
+        if (_hideOnAwake)
+        {
+            InstantHide();
+        }
+        else
+        {
+            InstantShow();
+        }
+    }
 
     private void OnValidate()
     {
