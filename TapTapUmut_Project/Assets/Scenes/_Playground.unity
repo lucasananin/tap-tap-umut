@@ -706,7 +706,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,6 +1121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 231ed9912a3848e448fe08694115b0f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameDataSO: {fileID: 11400000, guid: 83bfc51cfeaeaeb43971999710c58236, type: 2}
   _levelSO: {fileID: 11400000, guid: adb6068398fff7044a0cfcaf097afc88, type: 2}
   _spawner: {fileID: 1830453203}
   _timeHandler: {fileID: 369371054}
@@ -1748,7 +1749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1370158619
 MonoBehaviour:
   m_ObjectHideFlags: 0

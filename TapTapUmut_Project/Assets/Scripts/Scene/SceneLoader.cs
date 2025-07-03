@@ -24,7 +24,7 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    public void Load()
+    public virtual void Load()
     {
         TrySetReferences();
         _manager.LoadScene(_sceneToLoad, _sceneToUnload);

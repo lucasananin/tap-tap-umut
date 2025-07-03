@@ -2,10 +2,16 @@ using UnityEngine;
 
 public class LevelHandler : MonoBehaviour
 {
+    [SerializeField] GameDataSO _gameDataSO = null;
     [SerializeField] LevelSO _levelSO = null;
     [SerializeField] BalloonSpawner _spawner = null;
     [SerializeField] TimeHandler _timeHandler = null;
     [SerializeField] bool _spawnOnStart = true;
+
+    private void Awake()
+    {
+        _levelSO = _gameDataSO.CurrentLevelSO;
+    }
 
     private void Start()
     {
