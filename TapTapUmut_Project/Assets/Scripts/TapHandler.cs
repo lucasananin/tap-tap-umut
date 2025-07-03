@@ -6,7 +6,7 @@ public class TapHandler : MonoBehaviour
 {
     [SerializeField] ContactFilter2D _contacFilter = default;
 
-    private readonly List<HealthBehaviour> _ballonsHit = null;
+    private readonly List<HealthBehaviour> _ballonsHit = new(99);
     private readonly RaycastHit2D[] _results = new RaycastHit2D[99];
 
     public static event UnityAction<List<HealthBehaviour>> OnTap = null;
@@ -28,7 +28,7 @@ public class TapHandler : MonoBehaviour
         for (int i = 0; i < _hits; i++)
         {
             var _colliderHit = _results[i].collider;
-            Debug.Log($"// hit {_colliderHit.name}");
+            //Debug.Log($"// hit {_colliderHit.name}");
 
             if (_colliderHit.TryGetComponent(out HealthBehaviour _health))
             {
@@ -37,7 +37,7 @@ public class TapHandler : MonoBehaviour
             }
         }
 
-        if (_hits > 0)
+        if (_ballonsHit.Count > 0)
             OnTap?.Invoke(_ballonsHit);
     }
 }

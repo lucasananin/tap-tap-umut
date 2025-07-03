@@ -17,6 +17,8 @@ public class BallonPopHandler : MonoBehaviour
     {
         int _count = _balloonsHit.Count;
 
+        // if hit more than one multiply the ScoreMultiplier for some seconds.
+
         for (int i = 0; i < _count; i++)
         {
             if (_balloonsHit[i].TryGetComponent(out BalloonBehaviour _behaviour))
