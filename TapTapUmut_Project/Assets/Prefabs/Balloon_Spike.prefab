@@ -13,13 +13,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 443542838737120438, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 443542838737120438, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
       propertyPath: m_Color.r
-      value: 0.6666666
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1361866449105243371, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
       propertyPath: _popEffectSO
       value: 
-      objectReference: {fileID: 11400000, guid: 395812e7871340a41a1689f116efc5dc, type: 2}
+      objectReference: {fileID: 11400000, guid: 2b3f8389b9c86f6419d98cf8bc1432a8, type: 2}
     - target: {fileID: 2697858601565311476, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -62,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4892326021442503363, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
       propertyPath: m_Name
-      value: Balloon_Good_1
+      value: Balloon_Spike
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

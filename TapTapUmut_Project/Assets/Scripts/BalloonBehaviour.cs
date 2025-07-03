@@ -1,9 +1,11 @@
 using System;
+using System.Linq;
 using UnityEngine;
 
 public class BalloonBehaviour : MonoBehaviour
 {
     [SerializeField] Rigidbody2D _rb = null;
+    [SerializeField] HealthBehaviour _health = null;
     [SerializeField] PopEffectSO _popEffectSO = null;
     [Space]
     [SerializeField] int _scoreValue = 3;
@@ -43,5 +45,26 @@ public class BalloonBehaviour : MonoBehaviour
 
         var _scoreHandler = FindFirstObjectByType<ScoreHandler>();
         _scoreHandler.DecreaseValue(0);
+    }
+
+    public void PopAll()
+    {
+        var _balloons = FindObjectsByType<BalloonBehaviour>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+        var _list = _balloons.ToList();
+        _list.Remove(this);
+
+        var _popHandler = FindFirstObjectByType<BalloonPopHandler>();
+        _popHandler.ApplyEffects(_list);
+    }
+
+    public void StartSlowMotion()
+    {
+        var _timeHandler = FindFirstObjectByType<TimeHandler>();
+        _timeHandler.StartSlowMotion();
+    }
+
+    public void TakeDamage()
+    {
+        _health.TakeDamage();
     }
 }

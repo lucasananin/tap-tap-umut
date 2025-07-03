@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 1361866449105243371}
   - component: {fileID: 4245392383654489528}
   m_Layer: 0
-  m_Name: Balloon_Bad_DestroyAll
+  m_Name: _Balloon_Bad_DestroyAll
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

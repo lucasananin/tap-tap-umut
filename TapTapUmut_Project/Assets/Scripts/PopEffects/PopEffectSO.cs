@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 //[CreateAssetMenu(fileName = "PopEffectSO", menuName = "Scriptable Objects/PopEffectSO")]
