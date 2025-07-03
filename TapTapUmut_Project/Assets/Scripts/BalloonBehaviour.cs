@@ -9,4 +9,9 @@ public class BalloonBehaviour : MonoBehaviour
         _rb.AddForce(_force, ForceMode2D.Impulse);
         _rb.AddTorque(_torque * _force.x, ForceMode2D.Impulse);
     }
+
+    public void ApplyEffect()
+    {
+
+    }
 }

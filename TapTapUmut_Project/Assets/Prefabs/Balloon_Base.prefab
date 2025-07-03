@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 6611898558041707028}
   - component: {fileID: 3093563072457697377}
   - component: {fileID: 1361866449105243371}
+  - component: {fileID: 4245392383654489528}
   m_Layer: 0
   m_Name: Balloon_Base
   m_TagString: Untagged
@@ -198,3 +199,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 6611898558041707028}
+--- !u!114 &4245392383654489528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4892326021442503363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39aa42fe4254bcb4e8dea3cb75eaf1d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentValue: 1
