@@ -5,16 +5,18 @@ using Utilities;
 [CreateAssetMenu(fileName = "Level_", menuName = "Scriptable Objects/LevelSO")]
 public class LevelSO : ScriptableObject
 {
-    [SerializeField] BalloonTable[] _tables = null;
+    [SerializeField] float _duration = 60f;
     [SerializeField] Vector2 _delayRange = new(1f, 2f);
     [SerializeField] Vector2 _xForceRange = new(-1f, 1f);
     [SerializeField] Vector2 _yForceRange = new(10f, 12f);
     [SerializeField] Vector2 _torqueRange = new(4f, 8f);
     [SerializeField] Vector2Int _burstRange = new(1, 3);
+    [SerializeField] BalloonTable[] _tables = null;
 
     [Header("// READONLY")]
     [SerializeField] List<float> _odds = null;
 
+    public float Duration { get => _duration; }
     public Vector2 DelayRange { get => _delayRange; }
     public Vector2 XForceRange { get => _xForceRange; }
     public Vector2 YForceRange { get => _yForceRange; }

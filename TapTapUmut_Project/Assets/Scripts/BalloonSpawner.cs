@@ -4,21 +4,14 @@ using UnityEngine;
 public class BalloonSpawner : MonoBehaviour
 {
     [SerializeField] Collider2D _area = null;
-    [SerializeField] bool _spawnOnStart = true;
-    [Space]
+
+    [Header("// READONLY")]
     [SerializeField] LevelSO _levelSO = null;
 
-    private void Start()
-    {
-        if (_spawnOnStart)
-        {
-            StartSpawning();
-        }
-    }
-
     [ContextMenu("StartSpawning()")]
-    public void StartSpawning()
+    public void StartSpawning(LevelSO _so)
     {
+        _levelSO = _so;
         StartCoroutine(Spawn_Routine());
     }
 
@@ -45,5 +38,11 @@ public class BalloonSpawner : MonoBehaviour
             var _delay = Random.Range(_levelSO.DelayRange.x, _levelSO.DelayRange.y);
             yield return new WaitForSeconds(_delay);
         }
+    }
+
+    [ContextMenu("StopSpawning()")]
+    public void StopSpawning()
+    {
+        StopAllCoroutines();
     }
 }

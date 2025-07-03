@@ -19,11 +19,6 @@ public class SceneHandler : MonoBehaviour
 
     public void LoadScene(string _sceneToLoad, string _sceneToUnload)
     {
-        if (Time.timeScale == 0)
-        {
-            Time.timeScale = 1;
-        }
-
         StartCoroutine(LoadYourAsyncScene(_sceneToLoad, _sceneToUnload));
     }
 
