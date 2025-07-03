@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f38dc086e8d4eb4bb3f2a6e81e118c7, type: 3}
   m_Name: Level_1
   m_EditorClassIdentifier: 
+  _startMessage: Tap the balloons to score!
   _duration: 10
   _delayRange: {x: 1, y: 2}
   _xForceRange: {x: -1, y: 1}
@@ -21,7 +22,10 @@ MonoBehaviour:
   _tables:
   - _prefabs:
     - {fileID: 6694372175746724523, guid: 761f0550b8c04904580a67397b8f42bc, type: 3}
-    _odd: 90
+    _odd: 70
+  - _prefabs:
+    - {fileID: 6694372175746724523, guid: e3064e68b169b2d46832f8c3eed7ec91, type: 3}
+    _odd: 30
   _odds:
   - 90
   - 10

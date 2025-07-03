@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class LevelHandler : MonoBehaviour
@@ -11,6 +12,7 @@ public class LevelHandler : MonoBehaviour
     [SerializeField] ScoreHandler _scoreHandler = null;
     [SerializeField] CanvasView _hud = null;
     [SerializeField] CanvasView _endgameView = null;
+    [SerializeField] TextMeshProUGUI _startMessageText = null;
     [Space]
     [SerializeField] bool _spawnOnStart = true;
     [SerializeField] float _startDelay = 1;
@@ -47,6 +49,7 @@ public class LevelHandler : MonoBehaviour
     private IEnumerator StartGame_Routine()
     {
         _hud.Show();
+        _startMessageText.text = _levelSO.StartMessage;
         yield return new WaitForSecondsRealtime(_startDelay);
         _spawner.StartSpawning(_levelSO);
         _timeHandler.StartCountdown(_levelSO);

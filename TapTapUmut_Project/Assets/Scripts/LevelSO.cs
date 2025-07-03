@@ -5,6 +5,7 @@ using Utilities;
 [CreateAssetMenu(fileName = "Level_", menuName = "Scriptable Objects/LevelSO")]
 public class LevelSO : ScriptableObject
 {
+    [SerializeField] string _startMessage = null;
     [SerializeField] float _duration = 60f;
     [SerializeField] Vector2 _delayRange = new(1f, 2f);
     [SerializeField] Vector2 _xForceRange = new(-1f, 1f);
@@ -16,6 +17,7 @@ public class LevelSO : ScriptableObject
     [Header("// READONLY")]
     [SerializeField] List<float> _odds = null;
 
+    public string StartMessage { get => _startMessage; }
     public float Duration { get => _duration; }
     public Vector2 DelayRange { get => _delayRange; }
     public Vector2 XForceRange { get => _xForceRange; }

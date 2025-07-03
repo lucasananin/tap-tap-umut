@@ -12,18 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f38dc086e8d4eb4bb3f2a6e81e118c7, type: 3}
   m_Name: Level_3
   m_EditorClassIdentifier: 
-  _tables:
-  - _prefabs:
-    - {fileID: 6694372175746724523, guid: 761f0550b8c04904580a67397b8f42bc, type: 3}
-    _odd: 90
-  - _prefabs:
-    - {fileID: 6694372175746724523, guid: 0cec80d4364524d44ade4b357cb6e94a, type: 3}
-    _odd: 10
+  _startMessage: Look for a clock!
+  _duration: 60
   _delayRange: {x: 1, y: 2}
   _xForceRange: {x: -1, y: 1}
   _yForceRange: {x: 10, y: 12}
   _torqueRange: {x: 4, y: 8}
-  _burstRange: {x: 1, y: 3}
+  _burstRange: {x: 1, y: 2}
+  _tables:
+  - _prefabs:
+    - {fileID: 6694372175746724523, guid: 761f0550b8c04904580a67397b8f42bc, type: 3}
+    - {fileID: 6694372175746724523, guid: e3064e68b169b2d46832f8c3eed7ec91, type: 3}
+    _odd: 70
+  - _prefabs:
+    - {fileID: 6694372175746724523, guid: 0cec80d4364524d44ade4b357cb6e94a, type: 3}
+    _odd: 20
+  - _prefabs:
+    - {fileID: 6694372175746724523, guid: 37021a634918c9d44820d7a328890665, type: 3}
+    - {fileID: 6694372175746724523, guid: f3fac58a7c2653846af5887232d4dd5b, type: 3}
+    _odd: 10
   _odds:
   - 90
   - 10
