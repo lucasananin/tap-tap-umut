@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class BalloonBehaviour : MonoBehaviour
@@ -28,5 +29,19 @@ public class BalloonBehaviour : MonoBehaviour
     {
         var _scoreHandler = FindFirstObjectByType<ScoreHandler>();
         _scoreHandler.DecreaseValue(_scoreValue);
+    }
+
+    public void DestroyAll()
+    {
+        var _balloons = FindObjectsByType<BalloonBehaviour>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+        var _count = _balloons.Length;
+
+        for (int i = _count - 1; i >= 0; i--)
+        {
+            Destroy(_balloons[i].gameObject);
+        }
+
+        var _scoreHandler = FindFirstObjectByType<ScoreHandler>();
+        _scoreHandler.DecreaseValue(0);
     }
 }
