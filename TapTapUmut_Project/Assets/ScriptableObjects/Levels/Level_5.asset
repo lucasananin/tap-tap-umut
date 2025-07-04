@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f38dc086e8d4eb4bb3f2a6e81e118c7, type: 3}
   m_Name: Level_5
   m_EditorClassIdentifier: 
+  _startMessage: ...
   _duration: 60
   _delayRange: {x: 1, y: 2}
   _xForceRange: {x: -1, y: 1}

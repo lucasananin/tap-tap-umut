@@ -21,6 +21,7 @@ public class LevelHandler : MonoBehaviour
     private void Awake()
     {
         _levelSO = _gameDataSO.CurrentLevelSO;
+        _startMessageText.text = _levelSO.StartMessage;
     }
 
     private void Start()
@@ -49,7 +50,6 @@ public class LevelHandler : MonoBehaviour
     private IEnumerator StartGame_Routine()
     {
         _hud.Show();
-        _startMessageText.text = _levelSO.StartMessage;
         yield return new WaitForSecondsRealtime(_startDelay);
         _spawner.StartSpawning(_levelSO);
         _timeHandler.StartCountdown(_levelSO);

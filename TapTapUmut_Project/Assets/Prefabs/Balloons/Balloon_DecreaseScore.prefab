@@ -9,21 +9,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 443542838737120438, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 959a66b6b7cb90f499db6880beb8819a, type: 3}
+    - target: {fileID: 443542838737120438, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.19999999
       objectReference: {fileID: 0}
     - target: {fileID: 443542838737120438, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 0.19999999
       objectReference: {fileID: 0}
     - target: {fileID: 443542838737120438, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
       propertyPath: m_Color.r
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1361866449105243371, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
       propertyPath: _popEffectSO
       value: 
-      objectReference: {fileID: 11400000, guid: daed9b6016c8cea4f9b2c75cf05947df, type: 2}
+      objectReference: {fileID: 11400000, guid: 2b3f8389b9c86f6419d98cf8bc1432a8, type: 2}
     - target: {fileID: 2697858601565311476, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -66,7 +70,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4892326021442503363, guid: f50413a181ae17e43bfc73508f9adb3d, type: 3}
       propertyPath: m_Name
-      value: Balloon_DestroyAll
+      value: Balloon_DecreaseScore
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
