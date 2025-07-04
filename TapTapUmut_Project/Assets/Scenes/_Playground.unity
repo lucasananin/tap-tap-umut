@@ -1818,6 +1818,7 @@ MonoBehaviour:
   _startMessageText: {fileID: 1758669410}
   _background: {fileID: 1311453000}
   _spawnOnStart: 0
+  _debug: 1
   _startDelay: 1
   _endDelay: 2
 --- !u!4 &1015005759
@@ -3035,7 +3036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1370158619
 MonoBehaviour:
   m_ObjectHideFlags: 0

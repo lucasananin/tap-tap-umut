@@ -17,12 +17,15 @@ public class LevelHandler : MonoBehaviour
     [SerializeField] RawImage _background = null;
     [Space]
     [SerializeField] bool _spawnOnStart = true;
+    [SerializeField] bool _debug = false;
     [SerializeField] float _startDelay = 1;
     [SerializeField] float _endDelay = 2;
 
     private void Awake()
     {
-        _levelSO = _gameDataSO.CurrentLevelSO;
+        if (!_debug)
+            _levelSO = _gameDataSO.CurrentLevelSO;
+
         _startMessageText.text = _levelSO.StartMessage;
         _background.texture = _levelSO.Background;
     }
