@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Level_1
   m_EditorClassIdentifier: 
   _startMessage: Tap the balloons to score!
-  _duration: 10
+  _duration: 60
+  _background: {fileID: 2800000, guid: 083e5d9c3938d8c4f944763791676a8c, type: 3}
   _delayRange: {x: 1, y: 2}
+  _burstRange: {x: 1, y: 1}
   _xForceRange: {x: -1, y: 1}
   _yForceRange: {x: 10, y: 12}
   _torqueRange: {x: 4, y: 8}
-  _burstRange: {x: 1, y: 1}
   _tables:
   - _prefabs:
     - {fileID: 6694372175746724523, guid: 761f0550b8c04904580a67397b8f42bc, type: 3}

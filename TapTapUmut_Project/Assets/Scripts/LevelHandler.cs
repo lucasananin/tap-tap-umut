@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelHandler : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class LevelHandler : MonoBehaviour
     [SerializeField] CanvasView _hud = null;
     [SerializeField] CanvasView _endgameView = null;
     [SerializeField] TextMeshProUGUI _startMessageText = null;
+    [SerializeField] RawImage _background = null;
     [Space]
     [SerializeField] bool _spawnOnStart = true;
     [SerializeField] float _startDelay = 1;
@@ -22,6 +24,7 @@ public class LevelHandler : MonoBehaviour
     {
         _levelSO = _gameDataSO.CurrentLevelSO;
         _startMessageText.text = _levelSO.StartMessage;
+        _background.texture = _levelSO.Background;
     }
 
     private void Start()

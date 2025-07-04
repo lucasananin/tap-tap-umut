@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startMessage: ...
   _duration: 60
-  _delayRange: {x: 1, y: 2}
+  _background: {fileID: 2800000, guid: b1a7520064619744d8c4a2b69fdf2781, type: 3}
+  _delayRange: {x: 0.6, y: 1.6}
+  _burstRange: {x: 1, y: 3}
   _xForceRange: {x: -1, y: 1}
   _yForceRange: {x: 10, y: 12}
   _torqueRange: {x: 4, y: 8}
-  _burstRange: {x: 2, y: 3}
   _tables:
   - _prefabs:
     - {fileID: 6694372175746724523, guid: 761f0550b8c04904580a67397b8f42bc, type: 3}

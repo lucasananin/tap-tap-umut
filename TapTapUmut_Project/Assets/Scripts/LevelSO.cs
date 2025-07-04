@@ -7,11 +7,15 @@ public class LevelSO : ScriptableObject
 {
     [SerializeField] string _startMessage = null;
     [SerializeField] float _duration = 60f;
+    [SerializeField] Texture _background = null;
+    [Space]
     [SerializeField] Vector2 _delayRange = new(1f, 2f);
+    [SerializeField] Vector2Int _burstRange = new(1, 3);
+    [Space]
     [SerializeField] Vector2 _xForceRange = new(-1f, 1f);
     [SerializeField] Vector2 _yForceRange = new(10f, 12f);
     [SerializeField] Vector2 _torqueRange = new(4f, 8f);
-    [SerializeField] Vector2Int _burstRange = new(1, 3);
+    [Space]
     [SerializeField] BalloonTable[] _tables = null;
 
     [Header("// READONLY")]
@@ -19,11 +23,12 @@ public class LevelSO : ScriptableObject
 
     public string StartMessage { get => _startMessage; }
     public float Duration { get => _duration; }
+    public Texture Background { get => _background; }
     public Vector2 DelayRange { get => _delayRange; }
+    public Vector2Int BurstRange { get => _burstRange; }
     public Vector2 XForceRange { get => _xForceRange; }
     public Vector2 YForceRange { get => _yForceRange; }
     public Vector2 TorqueRange { get => _torqueRange; }
-    public Vector2Int BurstRange { get => _burstRange; }
 
     public void WarmUp()
     {
