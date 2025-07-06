@@ -12,6 +12,6 @@ public class CountdownUI : MonoBehaviour
 
     private void UpdateVisuals(float _value)
     {
-        _text.text = $"{_value:F2}";
+        _text.text = $"{_value:F1}";
     }
 }
