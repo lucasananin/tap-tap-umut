@@ -22,7 +22,7 @@ MonoBehaviour:
   _torqueRange: {x: 4, y: 8}
   _tables:
   - _prefabs:
-    - {fileID: 6694372175746724523, guid: 761f0550b8c04904580a67397b8f42bc, type: 3}
+    - {fileID: 6694372175746724523, guid: 79ba15390ec532d4d8383dd2c8129a8f, type: 3}
     _odd: 90
   - _prefabs:
     - {fileID: 6694372175746724523, guid: 0cec80d4364524d44ade4b357cb6e94a, type: 3}

@@ -1,6 +1,6 @@
-using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BalloonBehaviour : MonoBehaviour
 {
@@ -9,6 +9,8 @@ public class BalloonBehaviour : MonoBehaviour
     [SerializeField] PopEffectSO _popEffectSO = null;
     [Space]
     [SerializeField] int _scoreValue = 3;
+
+    public static event UnityAction<BalloonBehaviour> OnDestroyAllEffect = null;
 
     public void AddForce(Vector2 _force, float _torque)
     {
@@ -45,6 +47,7 @@ public class BalloonBehaviour : MonoBehaviour
 
         var _scoreHandler = FindFirstObjectByType<ScoreHandler>();
         _scoreHandler.DecreaseValue(0);
+        OnDestroyAllEffect?.Invoke(this);
     }
 
     public void PopAll()
