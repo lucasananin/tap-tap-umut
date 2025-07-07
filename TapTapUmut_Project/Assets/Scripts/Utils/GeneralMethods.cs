@@ -10,4 +10,9 @@ public class GeneralMethods
             Random.Range(bounds.min.z, bounds.max.z)
         );
     }
+
+    public static Vector2 GetRandomDirection()
+    {
+        return Random.insideUnitCircle.normalized;
+    }
 }
